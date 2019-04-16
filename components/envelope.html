@@ -18,16 +18,15 @@
       }
 
       .envelope {
-        width: 2.50rem;
-        height: 1.50rem;
-
+        width: 2.5rem;
+        height: 1.5rem;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        /* transform: translate(-50%, 0); */
+        transform: translateY(-100vh);
         border: 3px solid pink;
         border-radius: 5px;
         box-shadow: 4px 4px 6px #999;
@@ -38,7 +37,7 @@
         height: 0;
         border-left: 1.26rem solid transparent;
         border-right: 1.25rem solid transparent;
-        border-top: 0.80rem solid pink;
+        border-top: 0.8rem solid pink;
         border-radius: 10px;
         position: absolute;
         left: -5px;
@@ -63,11 +62,11 @@
       }
 
       .heart {
-        width: 0.20rem;
-        height: 0.20rem;
+        width: 0.2rem;
+        height: 0.2rem;
         position: absolute;
         top: 0.65rem;
-        left: 1.10rem;
+        left: 1.1rem;
         z-index: 999;
         cursor: pointer;
         animation: pound 0.25s infinite alternate;
@@ -90,4 +89,19 @@
     </div>
   </body>
   <script src="../js/device-init.js"></script>
+  <script type="module">
+    import animate from '../js/animateplus.js';
+    var el = document.getElementsByClassName('envelope')[0];
+
+    const play = async () => {
+      const options = await animate({
+        elements: el,
+        duration: 3000,
+        transform: ['translateY(-100vh)', 0]
+      });
+    };
+    setTimeout(() => {
+      play();
+    }, 2000);
+  </script>
 </html>
