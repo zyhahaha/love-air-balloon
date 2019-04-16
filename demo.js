@@ -81,7 +81,7 @@ var scope = {
   canvas.height = window.innerHeight;
   document.body.appendChild(canvas);
 
-  var particleCount = 50;
+  var particleCount = 30; // 修改气球数量
   while (particleCount--) {
     scope.particles.push(Particle({
       pos: {
