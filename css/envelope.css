@@ -1,22 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-img {
-  font-size: 0;
-}
-
 .envelope {
   width: 2.5rem;
   height: 1.5rem;
-
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  /* transform: translate(-50%, 0); */
+  transform: translateY(-100vh);
   border: 3px solid pink;
   border-radius: 5px;
   box-shadow: 4px 4px 6px #999;

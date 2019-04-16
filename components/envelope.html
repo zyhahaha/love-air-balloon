@@ -7,16 +7,8 @@
       content="width=device-width,initial-scale=1,user-scalable=no"
     />
     <title>气球</title>
-
+    <script src="../css/index.css"></script>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      img {
-        font-size: 0;
-      }
-
       .envelope {
         width: 2.5rem;
         height: 1.5rem;
@@ -100,8 +92,10 @@
         transform: ['translateY(-100vh)', 0]
       });
     };
-    setTimeout(() => {
-      play();
-    }, 2000);
+    window.onload = function() {
+      setTimeout(() => {
+        play();
+      }, 2000);
+    };
   </script>
 </html>
