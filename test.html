@@ -9,36 +9,27 @@
     <title>气球</title>
 
     <style>
-      /* .App {
-        position: fixed;
-        left: 50%;
-        top: 2%;
-        width: 800px;
-        height: 650px;
-        margin-left: -400px;
-        margin-right: -325px;
-        font-family: Microsoft YaHei;
-        border: 5px solid black;
-        padding: 0.5rem 2rem;
-        background: white;
-        font-weight: 900;
-        color: black;
-        letter-spacing: 0.5px;
-        line-height: 19px;
-      } */
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
       .envelope {
         width: 250px;
         height: 150px;
-        border: 3px solid pink;
+        
         position: fixed;
-        /* left: 35%;
-        transform: translate(-50%, 0); */
-        bottom: 30%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* transform: translate(-50%, 0); */
+        border: 3px solid pink;
         border-radius: 5px;
-        box-shadow: 4px 4px 2px #888888;
-        background-color: white;
-        font-weight: 900;
+        box-shadow: 4px 4px 6px #999;
+        background-color: #fff;
+        /* font-weight: 900; */
       }
       .triangle-down {
         width: 0;
@@ -72,10 +63,10 @@
       .heart {
         width: 20px;
         height: 20px;
-        z-index: 999;
         position: absolute;
-        left: 125px;
-        top: 75px;
+        top: 65px;
+        left: 110px;
+        z-index: 999;
         cursor: pointer;
         animation: pound 0.25s infinite alternate;
       }
@@ -87,16 +78,6 @@
         color: blue;
         font-size: 24px;
       }
-
-      /* .date {
-        position: absolute;
-        right: 25px;
-        color: blue;
-      }
-      .date-text {
-        font-size: 24px;
-        color: deeppink;
-      } */
     </style>
   </head>
   <body>
