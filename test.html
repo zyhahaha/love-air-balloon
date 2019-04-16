@@ -13,11 +13,14 @@
         margin: 0;
         padding: 0;
       }
+      img {
+        font-size: 0;
+      }
 
       .envelope {
-        width: 250px;
-        height: 150px;
-        
+        width: 2.50rem;
+        height: 1.50rem;
+
         position: fixed;
         top: 0;
         bottom: 0;
@@ -29,14 +32,13 @@
         border-radius: 5px;
         box-shadow: 4px 4px 6px #999;
         background-color: #fff;
-        /* font-weight: 900; */
       }
       .triangle-down {
         width: 0;
         height: 0;
-        border-left: 126px solid transparent;
-        border-right: 125px solid transparent;
-        border-top: 80px solid pink;
+        border-left: 1.26rem solid transparent;
+        border-right: 1.25rem solid transparent;
+        border-top: 0.80rem solid pink;
         border-radius: 10px;
         position: absolute;
         left: -5px;
@@ -45,9 +47,9 @@
       .triangle-up {
         width: 0;
         height: 0;
-        border-left: 125px solid transparent;
-        border-right: 127px solid transparent;
-        border-bottom: 75px solid pink;
+        border-left: 1.25rem solid transparent;
+        border-right: 1.27rem solid transparent;
+        border-bottom: 0.75rem solid pink;
         border-radius: 10px;
         position: absolute;
         bottom: -1px;
@@ -61,23 +63,23 @@
       }
 
       .heart {
-        width: 20px;
-        height: 20px;
+        width: 0.20rem;
+        height: 0.20rem;
         position: absolute;
-        top: 65px;
-        left: 110px;
+        top: 0.65rem;
+        left: 1.10rem;
         z-index: 999;
         cursor: pointer;
         animation: pound 0.25s infinite alternate;
       }
 
-      .text {
+      /* .text {
         position: absolute;
         top: -100px;
         left: 100px;
         color: blue;
         font-size: 24px;
-      }
+      } */
     </style>
   </head>
   <body>
