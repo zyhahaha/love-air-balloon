@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <title>气球</title>
+    <script src="../css/index.css"></script>
+    <style>
+      @keyframes pound {
+        to {
+          transform: scale(1.4);
+        }
+      }
+      .paper-page {
+        width: 2.8rem;
+        height: 3.8rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #ccc;
+        font-size: 0.12rem;
+        transform: scale(0);
+        /* animation: pound 0.25s infinite alternate; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paper-page">
+      test
+    </div>
+  </body>
+  <script src="../js/common/device-init.js"></script>
+  <script type="module">
+    import animate from '../js/common/animateplus.js';
+    var el = document.getElementsByClassName('paper-page')[0];
+
+    const play = async () => {
+      const options = await animate({
+        elements: el,
+        duration: 1000,
+        transform: ['scale(0)', 1]
+      });
+    };
+    
+    document.addEventListener('click', () => {
+      play();
+    });
+  </script>
+</html>
