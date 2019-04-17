@@ -18,15 +18,20 @@
         left: 0;
         right: 0;
         margin: auto;
-        background-color: #ccc;
+        background-color: #f3f3f3;
         font-size: 0.12rem;
         transform: scale(0);
+        border-radius: 0.1rem;
+        box-shadow: 4px 4px 10px;
+      }
+      .paper-page h3{
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="paper-page">
-      test
+      <h3>test</h3>
     </div>
   </body>
   <script src="../js/common/device-init.js"></script>
@@ -41,7 +46,7 @@
         transform: ['scale(0)', 1]
       });
     };
-    
+
     document.addEventListener('click', () => {
       play();
     });
