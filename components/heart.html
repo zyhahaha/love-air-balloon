@@ -23,7 +23,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        /* animation: pound 0.25s infinite alternate; */
+        opacity: 1;
       }
     </style>
   </head>
@@ -35,19 +35,22 @@
   <script src="../js/common/device-init.js"></script>
   <script type="module">
     import animate from '../js/common/animateplus.js';
-    var el = document.getElementsByClassName('heart')[0];
+    var heartEl = document.getElementsByClassName('heart')[0];
 
-    const play = async () => {
+    heartEl.style.animation = 'pound 0.25s infinite alternate';
+    const heartPlay = async () => {
+      heartEl.style.animation = '';
       const options = await animate({
-        elements: el,
+        elements: heartEl,
+        easing: "out-elastic 1 .7",
         duration: 3000,
         opacity: [1, 0],
-        transform: ['scale(1)', 5]
+        transform: ['scale(1)', 9]
       });
     };
     
-    el.addEventListener('click', () => {
-      play();
+    heartEl.addEventListener('click', () => {
+      heartPlay();
     });
   </script>
 </html>
