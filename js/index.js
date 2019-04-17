@@ -1,4 +1,4 @@
-import animate from './animateplus.js';
+import animate from './common/animateplus.js';
 var el = document.getElementsByClassName('envelope')[0];
 
 const play = async () => {
