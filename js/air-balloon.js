@@ -1,3 +1,5 @@
+import rough from './common/wmgwdw.js';
+
 var extend = function extend(base) {
   for (var _len = arguments.length, extensions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     extensions[_key - 1] = arguments[_key];

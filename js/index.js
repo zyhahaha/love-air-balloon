@@ -1,15 +1,3 @@
-import animate from './common/animateplus.js';
-var el = document.getElementsByClassName('envelope')[0];
-
-const play = async () => {
-  const options = await animate({
-    elements: el,
-    duration: 3000,
-    transform: ['translateY(-100vh)', 0]
-  });
-};
-window.onload = function() {
-  setTimeout(() => {
-    play();
-  }, 2000);
-};
+import './common/device-init.js';
+import './air-balloon.js';
+import './envelope.js';
