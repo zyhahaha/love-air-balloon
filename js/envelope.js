@@ -9,4 +9,8 @@ const envelopePlay = async () => {
   });
 };
 
-export default envelopePlay;
+setTimeout(() => {
+  envelopePlay();
+}, 2000);
+
+// export default envelopePlay;
