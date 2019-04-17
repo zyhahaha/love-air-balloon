@@ -1,4 +1,4 @@
-.envelope {
+.envelope-page {
   width: 2.5rem;
   height: 1.5rem;
   position: fixed;
@@ -13,7 +13,7 @@
   box-shadow: 4px 4px 6px #999;
   background-color: #fff;
 }
-.triangle-down {
+.envelope-page .triangle-down {
   width: 0;
   height: 0;
   border-left: 1.26rem solid transparent;
@@ -24,7 +24,7 @@
   left: -5px;
   top: -1px;
 }
-.triangle-up {
+.envelope-page .triangle-up {
   width: 0;
   height: 0;
   border-left: 1.25rem solid transparent;
@@ -42,7 +42,7 @@
   }
 }
 
-.heart {
+.envelope-page .heart {
   width: 0.2rem;
   height: 0.2rem;
   position: absolute;

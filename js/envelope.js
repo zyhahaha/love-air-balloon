@@ -1,5 +1,5 @@
 import animate from './common/animateplus.js';
-var el = document.getElementsByClassName('envelope')[0];
+var el = document.getElementsByClassName('envelope-page')[0];
 
 const play = async () => {
   const options = await animate({
