@@ -1,9 +1,9 @@
 import animate from './common/animateplus.js';
-var el = document.getElementsByClassName('envelope-page')[0];
+var envelopeEl = document.getElementsByClassName('envelope-page')[0];
 
 const play = async () => {
   const options = await animate({
-    elements: el,
+    elements: envelopeEl,
     duration: 3000,
     transform: ['translateY(-100vh)', 0]
   });
