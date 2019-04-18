@@ -78,7 +78,6 @@ var scope = {
 ~function (scope) {
   var canvas = scope.ctx.canvas;
 
-
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   document.body.appendChild(canvas);

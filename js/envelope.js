@@ -4,7 +4,7 @@ let envelopeEl = document.getElementsByClassName('envelope-page')[0];
 const envelopePlay = async () => {
   await animate({
     elements: envelopeEl,
-    duration: 3000,
+    duration: 5000,
     transform: ['translateY(-100vh)', 0]
   });
 };
