@@ -50,5 +50,5 @@
   left: 1.1rem;
   z-index: 999;
   user-select: none;
-  animation: pound 0.25s infinite alternate;
+  /* animation: pound 0.25s infinite alternate; */
 }
