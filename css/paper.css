@@ -16,6 +16,7 @@
   box-shadow: 4px 4px 10px pink;
 }
 .paper-page h3 {
+  padding-bottom: 0.1rem;
   text-align: center;
   font-size: 0.18rem;
 }
