@@ -7,11 +7,11 @@
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #f3f3f3;
+  background-color: pink;
   font-size: 0.12rem;
   transform: scale(0);
   border-radius: 0.1rem;
-  box-shadow: 4px 4px 10px;
+  box-shadow: 4px 4px 10px pink;
 }
 .paper-page h3{
   text-align: center;
