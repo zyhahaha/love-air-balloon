@@ -17,8 +17,4 @@ const paperPlay = async () => {
   });
 };
 
-// document.addEventListener('click', () => {
-//   paperPlay();
-// });
-
 export default paperPlay;

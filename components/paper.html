@@ -37,5 +37,8 @@
     <div class="paper-page"></div>
   </body>
   <script src="../js/common/device-init.js"></script>
-  <script type="module" src="../js/paper.js"></script>
+  <script type="module">
+    import paperPlay from '../js/paper.js';
+    document.addEventListener('click', paperPlay);
+  </script>
 </html>
